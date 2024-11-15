@@ -1,11 +1,16 @@
+// App.js
 import React from 'react';
-import ProductList from './ProductList';
+import './App.css';
+import Navbar from './Navbar';
+import Banner from './Banner';
+import ProductSection from './ProductSection';
 
 function App() {
   return (
-    <div>
-      <h1>Welcome to the Grocery Store</h1>
-      <ProductList />
+    <div className="App">
+      <Navbar />
+      <Banner />
+      <ProductSection />
     </div>
   );
 }

@@ -1,9 +1,84 @@
 {
-    "products": [
-      { "id": 1, "name": "Apple", "price": 1.5, "quantity": 100, "category": "fruits" },
-      { "id": 2, "name": "Banana", "price": 0.5, "quantity": 150, "category": "fruits" },
-      { "id": 3, "name": "Milk", "price": 1.0, "quantity": 50, "category": "dairy" },
-      { "id": 4, "name": "Bread", "price": 1.2, "quantity": 80, "category": "bakery" }
-    ]
-  }
-  
+  "products": [
+    {
+      "id": 1,
+      "category": "Fruits",
+      "name": "Apple",
+      "Dprice": 108,
+      "Oprice": 120,
+      "description": "Fresh and juicy apples, perfect for a healthy snack.",
+      "discount": "10% OFF",
+      "image": "public/1203769_1-fresho-apple-shimla-re.jpg"
+    },
+    {
+      "id": 2,
+      "category": "Fruits",
+      "name": "Banana",
+      "Dprice": 47.5,
+      "Oprice": 50,
+      "description": "Rich in potassium and energy, ideal for a quick boost.",
+      "discount": "5% OFF",
+      "image": "public/10000025_32-fresho-banana-robust.jpg"
+    },
+    {
+      "id": 3,
+      "category": "Vegetables",
+      "name": "Carrot",
+      "Dprice": 32,
+      "Oprice": 40,
+      "description": "Crunchy and full of vitamins, great for salads and snacks.",
+      "discount": "20% OFF",
+      "image": "public/carrot.jpg"
+    },
+    {
+      "id": 4,
+      "category": "Vegetables",
+      "name": "Broccoli",
+      "Dprice": 68,
+      "Oprice": 80,
+      "description": "High in fiber and nutrients, perfect for a healthy diet.",
+      "discount": "15% OFF",
+      "image": "public/brocolli.jpg"
+    },
+    {
+      "id": 5,
+      "category": "Dairy",
+      "name": "Milk",
+      "Dprice": 40.5,
+      "Oprice": 45,
+      "description": "Fresh dairy milk, a daily essential for strong bones.",
+      "discount": "10% OFF",
+      "image": "public/milk.jpg"
+    },
+    {
+      "id": 6,
+      "category": "Dairy",
+      "name": "Cheese",
+      "Dprice": 142.5,
+      "Oprice": 150,
+      "description": "Delicious cheese, ideal for sandwiches and pizzas.",
+      "discount": "5% OFF",
+      "image": "public/cheese.jpg"
+    },
+    {
+      "id": 7,
+      "category": "Trending",
+      "name": "Domex Cleaner",
+      "Dprice": 55,
+      "Oprice": 90,
+      "description": "Powerful cleaning solution for a germ-free home.",
+      "discount": "20% OFF",
+      "image": "public/domex.jpg"
+    },
+    {
+      "id": 8,
+      "category": "Offers",
+      "name": "Combo Pack - Wipes",
+      "Dprice": 100,
+      "Oprice": 200,
+      "description": "Pack of baby wipes with soothing ingredients.",
+      "discount": "30% OFF",
+      "image": "public/wipes.jpg"
+    }
+  ]
+}

@@ -1,42 +1,27 @@
-import React, { useEffect, useState } from 'react';
+// import React, { useEffect, useState } from 'react';
 
-function ProductList() {
-  const [products, setProducts] = useState([]);
+// function ProductList() {
+//   const [products, setProducts] = useState([]);
 
-  useEffect(() => {
-    fetch('http://localhost:5000/products')
-      .then(response => response.json())
-      .then(data => setProducts(data))
-      .catch(error => console.error('Error fetching products:', error));
-  }, []);
+//   useEffect(() => {
+//     fetch('http://localhost:5000/products')
+//       .then(response => response.json())
+//       .then(data => setProducts(data))
+//       .catch(error => console.error('Error fetching products:', error));
+//   }, []);
 
-  return (
-    <div>
-      <nav className="navbar">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            DailyMart
-          </a>
-          <ul>
-            <li>
-              <FontAwesomeIcon className="fa-icon" icon={faHouse} />
-            </li>
-          </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
-        </div>
-      </nav>
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       <h1>Grocery Products</h1>
+//       <ul>
+//         {products.map(product => (
+//           <li key={product.id}>
+//             <strong>{product.name}</strong> - ${product.price} ({product.quantity} in stock)
+//           </li>
+//         ))}
+//       </ul>
+//     </div>
+//   );
+// }
 
-export default ProductList;
+// export default ProductList;
