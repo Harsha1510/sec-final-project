@@ -12,14 +12,29 @@ function ProductList() {
 
   return (
     <div>
-      <h1>Grocery Products</h1>
-      <ul>
-        {products.map(product => (
-          <li key={product.id}>
-            <strong>{product.name}</strong> - RS{product.price} (RS{product.quantity} in stock)
-          </li>
-        ))}
-      </ul>
+      <nav className="navbar">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            DailyMart
+          </a>
+          <ul>
+            <li>
+              <FontAwesomeIcon className="fa-icon" icon={faHouse} />
+            </li>
+          </ul>
+          <form className="d-flex" role="search">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button className="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
     </div>
   );
 }
