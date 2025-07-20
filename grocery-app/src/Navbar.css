@@ -1,83 +1,102 @@
-/* Navbar.css */
+/* General Navbar Styles */
 .navbar {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #2a9d8f; /* Soft green color */
-    color: #ffffff;
-    font-family: Arial, sans-serif;
-    position: relative;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%; /* Ensures navbar spans full width */
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.navbar-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo a:hover {
+  color: #f39c12;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.navbar-links a:hover {
+  background-color: #f39c12;
+  color: black;
+}
+
+/* Mobile Hamburger Menu */
+.hamburger {
+  display: none; 
+  margin-right: 200px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Responsive Design for Tablets and Smaller Screens */
+@media (max-width:0px){
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
   }
-  
-  .navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    margin-right: auto;
+
+  .navbar-logo {
+    margin-bottom: 10px;
   }
-  
-  .category-dropdown {
-    position: relative;
-    margin-right: 15px;
-  }
-  
-  .dropdown-button {
-    background-color: #ffffff;
-    color: #2a9d8f;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .dropdown-button:hover {
-    background-color: #e9f5f2;
-  }
-  
-  .dropdown-menu {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    width: 150px;
-    z-index: 1000;
-  }
-  
-  .dropdown-item {
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #2a9d8f;
+
+  .hamburger {
     display: block;
-    font-size: 16px;
+/* Show hamburger menu */
   }
-  
-  .dropdown-item:hover {
-    background-color: #e9f5f2;
+
+  .navbar-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    width: 100%;
+    display: none; /* Hide links initially */
   }
-  
-  .search-bar {
-    padding: 8px 12px;
-    border-radius: 5px;
-    border: 1px solid #ffffff;
-    margin-right: 15px;
-    font-size: 16px;
-    width: 200px;
+
+  .navbar-links.show {
+    display: flex; /* Show links when hamburger is clicked */
   }
-  
-  .location-button {
-    background-color: #264653;
-    color: #ffffff;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
+
+  .navbar-links a {
+    font-size: 14px;
+    padding: 10px 0;
+    width: 100%; /* Full width for better tap area */
   }
-  
-  .location-button:hover {
-    background-color: #1e3d42;
+}
+
+@media (max-width: 480px) {
+  .navbar-logo a {
+    font-size: 18px;
   }
-  
+
+  .navbar-links a {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+}
