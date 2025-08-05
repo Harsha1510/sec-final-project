@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./AdminPage.css"
 function AdminPage() {
-  const API_BASE_URL = "http://localhost:5000"; // Ensure your JSON Server runs on this base URL
+  const API_BASE_URL = "https://grocify-2.onrender.com"; // Ensure your JSON Server runs on this base URL
 
   const [products, setProducts] = useState([]); // State for products
   const [newProduct, setNewProduct] = useState({

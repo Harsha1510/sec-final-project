@@ -8,7 +8,7 @@ function ProductSection({ cart, addToCart, updateCart }) {
 
   // Fetch products on component mount
   useEffect(() => {
-    fetch("http://localhost:5000/products")
+    fetch("https://grocify-2.onrender.com/products")
       .then((response) => response.json())
       .then((data) => setProducts(data))
       .catch((error) => console.error("Error fetching products:", error));
